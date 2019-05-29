@@ -46,11 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forme\SpisakForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forme\SpisakForm.Designer.cs">
+      <DependentUpon>SpisakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klase\Knjiga.cs" />
+    <Compile Include="Forme\PocetniEkranForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PocetniEkranForm.Designer.cs">
+      <DependentUpon>PocetniEkranForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\UlogujSeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\UlogujSeForm.Designer.cs">
+      <DependentUpon>UlogujSeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,8 +72,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>testDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Klase\Ucenik.cs" />
+    <EmbeddedResource Include="Forme\PocetniEkranForm.resx">
+      <DependentUpon>PocetniEkranForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\SpisakForm.resx">
+      <DependentUpon>SpisakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\UlogujSeForm.resx">
+      <DependentUpon>UlogujSeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

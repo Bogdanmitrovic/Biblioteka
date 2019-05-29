@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Biblioteka
+namespace Biblioteka.Forme
 {
-    public partial class Form1 : Form
+    public partial class SpisakForm : Form
     {
-        public Form1()
+        public SpisakForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void NazadButton_Click(object sender, EventArgs e)
         {
-            
+            PocetniEkranForm.ActiveForm.Show();
+            this.Close();
         }
     }
 }
