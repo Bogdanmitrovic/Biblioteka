@@ -13,8 +13,7 @@ namespace Biblioteka
         {
             InitializeComponent();
         }
-
-        private void Login_Load(object sender, EventArgs e)
+        void UlepsajOvo()
         {
             BackColor = Resursi.bojaPozadinaSvetla;
             groupBox1.BackColor = Resursi.bojaPozadinaTamna;
@@ -28,9 +27,14 @@ namespace Biblioteka
             button1.ForeColor = Resursi.bojaTamna;
             button1.BackColor = Resursi.bojaSvetla;
             textBox2.PasswordChar = '*';
-            if (!File.Exists("settings.txt"))
+        }
+        private void Login_Load(object sender, EventArgs e)
+        {
+            UlepsajOvo();
+            if (!File.Exists("info.txt"))
             {
                 button1.Text = "Креирај налог";
+                Debug.WriteLine("ne postoji fajl");
             }
         }
 
@@ -61,7 +65,7 @@ namespace Biblioteka
                     {
                         Glavna g = new Glavna();
                         g.Show();
-                        this.Hide();
+                        this.Close();
                     }
                 }
             }

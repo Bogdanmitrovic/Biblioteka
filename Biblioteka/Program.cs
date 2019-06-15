@@ -16,7 +16,9 @@ namespace Biblioteka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Login x = new Login();
+            x.Show();
+            Application.Run();
         }
     }
 }
