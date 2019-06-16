@@ -17,7 +17,6 @@ namespace Biblioteka
         public int BrojZaduzenihKnjiga { get { return this.BrojZaduzenihKnjiga; } protected set { this.BrojZaduzenihKnjiga = value; } }
         public int Generacija { get { return this.Generacija; } protected set { this.Generacija = value; } }
         public List<Knjiga> SpisakZaduzenihKnjiga { get { return this.SpisakZaduzenihKnjiga; } protected set { this.SpisakZaduzenihKnjiga = value; } }
-
         public Ucenik(string Ime, char SrednjeSlovo, string Prezime, int Godina, int Odeljenje, int BrojUDnevniku, int BrojZaduzenihKnjiga, int Generacija)
         {
             this.Ime = Ime;

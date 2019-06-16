@@ -56,7 +56,6 @@ namespace Biblioteka
             //this.uceniciTableAdapter.Fill(this.databaseDataSet.Ucenici);
             UlepsajOvo();
             //uceniciTableAdapter.Insert("Bogdan3", "Mitrovic2", "P2", "uzete knjige2", 3, 1, 1);
-
         }
 
         
@@ -110,6 +109,16 @@ namespace Biblioteka
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DomainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
