@@ -61,6 +61,7 @@
     <Compile Include="Glavna.Designer.cs">
       <DependentUpon>Glavna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Knjiga.cs" />
     <Compile Include="Knjige.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +82,7 @@
     <Compile Include="Ucenici.Designer.cs">
       <DependentUpon>Ucenici.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ucenik.cs" />
     <EmbeddedResource Include="Glavna.resx">
       <DependentUpon>Glavna.cs</DependentUpon>
     </EmbeddedResource>
